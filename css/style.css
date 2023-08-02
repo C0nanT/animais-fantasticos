@@ -83,8 +83,82 @@ body {
   font-weight: 400;
   margin-bottom: 1rem;
   grid-column: 1/4;
+  color: #07250a;
+}
+
+.animais h2 {
+  font-family: "IBM Plex Mono";
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  color: #082b0b;
+}
+
+.animais h2::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  margin-right: 10px;
+  background: linear-gradient(90deg, #421d06 0, #8b4513 100%);
+  border-radius: 2.5px;
 }
 
 .animais p {
   font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
+
+.animais-list {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.animais-list::-webkit-scrollbar {
+  width: 18px;
+}
+
+.animais-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #421d06 0, #8b4513 100%);
+  border-left: 4px solid #eefaed;
+  border-right: 4px solid #eefaed;
+}
+
+.animais-list::-webkit-scrollbar-track {
+  background: #eefaed;
+}
+
+.animais-descricao {
+  grid-column: 3;
+}
+
+.animais-descricao section {
+  margin-bottom: 3rem;
+}
+
+.faq-lista {
+  grid-column: 2/4;
+}
+
+.faq-lista dt {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #082b0b;
+}
+
+.faq-lista dt::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/pinheiro-decoracao.png") no-repeat;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+/* 12min */
