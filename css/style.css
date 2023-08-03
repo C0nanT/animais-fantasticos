@@ -148,17 +148,53 @@ body {
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  color: #082b0b;
+  color: #199123;
 }
 
 .faq-lista dt::before {
   content: "";
   display: inline-block;
-  width: 10px;
+  width: 15px;
   height: 10px;
-  background: url("../img/pinheiro-decoracao.png") no-repeat;
+  /* background: linear-gradient(180deg, #556b2f 25%, #8b4513 100%); */
+  background-color: #0f5f16;
   margin-right: 5px;
-  border-radius: 50%;
+  border-radius: 1px;
 }
 
-/* 12min */
+.faq-lista dd {
+  font-family: Helvetica, sans-serif, Arial;
+  margin-left: 20px;
+}
+
+.mapa {
+  grid-column: 2;
+}
+
+.dados {
+  grid-column: 3;
+}
+
+.dados li {
+  margin-bottom: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.dados li,
+li a {
+  display: flex;
+  gap: 10px;
+}
+
+.footer {
+  grid-column: 1/4;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #1b5f20 0, #83d48a 100%);
+  border-radius: 0 10px 10px 0;
+}
+
+.footer p {
+  padding: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: end;
+}
