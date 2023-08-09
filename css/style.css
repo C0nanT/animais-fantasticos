@@ -49,13 +49,13 @@ body {
   position: absolute;
   bottom: -3px;
   right: 30px;
+  transition: 0.5s;
 }
 
 .menu li a {
   display: block;
   padding: 10px;
   margin-right: 10px;
-  color: #222;
   text-decoration: none;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
@@ -63,6 +63,12 @@ body {
   font-size: 0.875rem;
   letter-spacing: 0.15em;
   color: #134918;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  border-radius: 9px;
+  color: #b8f7bc;
 }
 
 .grid-section {
@@ -156,7 +162,6 @@ body {
   display: inline-block;
   width: 15px;
   height: 10px;
-  /* background: linear-gradient(180deg, #556b2f 25%, #8b4513 100%); */
   background-color: #0f5f16;
   margin-right: 5px;
   border-radius: 1px;
@@ -184,6 +189,13 @@ body {
 li a {
   display: flex;
   gap: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+#github:hover,
+#linkedin:hover {
+  color: #15801c;
 }
 
 .footer {
