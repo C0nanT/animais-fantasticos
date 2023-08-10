@@ -158,6 +158,11 @@ body {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: #199123;
+  cursor: pointer;
+}
+
+.faq-lista dt:hover {
+  color: #20b92d;
 }
 
 .faq-lista dt::before {
@@ -173,6 +178,13 @@ body {
 .faq-lista dd {
   font-family: Helvetica, sans-serif, Arial;
   margin-left: 20px;
+  display: none;
+}
+
+.js-lista dd.ativo {
+  display: block !important;
+  color: #0b5810;
+  animation: slide 0.4s forwards;
 }
 
 .mapa {
@@ -223,15 +235,14 @@ li a {
   animation: show 0.8s forwards;
 }
 
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: translate3d(-30px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 @media (max-width: 720px) {
@@ -266,5 +277,27 @@ li a {
   .footer {
     margin-bottom: 0px;
     border-radius: 0;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 100px;
+    opacity: 1;
   }
 }
