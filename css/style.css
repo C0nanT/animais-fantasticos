@@ -281,6 +281,9 @@ li a {
     margin-bottom: 0px;
     border-radius: 0;
   }
+  .footer p {
+    text-align: center;
+  }
 }
 
 @keyframes show-right {
