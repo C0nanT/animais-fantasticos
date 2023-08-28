@@ -181,7 +181,7 @@ body {
   display: none;
 }
 
-.js-lista dd.ativo {
+[data-anime="acd"] dd.ativo {
   display: block !important;
   color: #0b5810;
   animation: slide 0.4s forwards;
@@ -226,21 +226,24 @@ li a {
   text-align: end;
 }
 
-.js-tabcontent section {
+[data-tab="content"] section {
   display: none;
 }
 
-.js-tabcontent section.ativo {
+[data-tab="content"] section.ativo {
   display: block !important;
-  animation: show 0.8s forwards;
 }
 
-.js-scroll {
+[data-tab="content"] section.ativo.show-right {
+  animation: show-right 0.8s forwards;
+}
+
+[data-anime="scroll"] {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
   transition: 0.3s;
 }
-.js-scroll.ativo {
+[data-anime="scroll"].ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -280,7 +283,7 @@ li a {
   }
 }
 
-@keyframes show {
+@keyframes show-right {
   from {
     opacity: 0;
     transform: translate3d(-30px, 0, 0);
