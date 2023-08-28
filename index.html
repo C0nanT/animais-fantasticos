@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/favicon.png" type="image/svg+xml" />
     <script>
-        // document.documentElement.classList.add(".js");
     </script>
 
 
@@ -19,110 +18,124 @@
 </head>
 
 <body>
-    <nav class="menu" data-menu="suave">
-        <ul>
-            <li><a href="#animais">Animais</a></li>
-            <li><a href="#faq">Faq</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="https://github.com/C0nanT/">GitHub</a></li>
-            <li><img class="arvore" src="./img/arvore-decoracao.png" alt="Árvore de decoração" width="35" height="35"></li>
-        </ul>
-    </nav>
-    <section class="grid-section animais" data-anime="scroll" id="animais">
-        <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-list" data-tab="menu">
-            <li>
-                <img src="img/imagem1.jpg" alt="Foto de uma raposa">
-            </li>
-            <li>
-                <img src="img/imagem2.jpg" alt="Foto de um esquilo">
-            </li>
-            <li>
-                <img src="img/imagem3.jpg" alt="Foto de um urso">
-            </li>
-            <li>
-                <img src="img/imagem4.jpg" alt="Foto de um lobo">
-            </li>
-            <li>
-                <img src="img/imagem5.jpg" alt="Foto de um macaco">
-            </li>
-            <li>
-                <img src="img/imagem6.jpg" alt="Foto de um leão">
-            </li>
-        </ul>
-        <div class="animais-descricao" data-tab="content">
-            <section data-anime="show-right">
-                <h2>Raposa</h2>
-                <p>As raposas são mamíferos carnívoros conhecidos por seus focinhos afiados, orelhas pontudas e pelagem espessa, muitas vezes em tons de vermelho ou cinza. Adaptáveis e ágeis, habitam uma variedade de ambientes, desde florestas até áreas urbanas. São caçadoras habilidosas, se alimentando principalmente de pequenos animais e ocasionalmente de frutas. Além disso, possuem uma reputação de astúcia e inteligência, frequentemente retratadas em histórias e mitos.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Esquilo</h2>
-                <p>Esquilos são roedores de tamanho pequeno a médio, reconhecidos por suas caudas peludas e olhos expressivos. Vivem em árvores e solo, sendo ágeis escaladores. Armazenam comida, como nozes e sementes, para o inverno. Sua pelagem varia em cores, incluindo tons de marrom e cinza. São conhecidos por sua agilidade e comportamento curioso.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Urso</h2>
-                <p>Ursos são mamíferos robustos e poderosos, com corpos maciços cobertos por pelagem densa e variada. Vivem em diversos habitats, desde florestas até regiões árticas. São onívoros, consumindo plantas e carne, e hibernam no inverno para conservar energia. São reconhecidos por sua força física e comportamento solitário, embora algumas espécies também sejam sociais. Ursos têm uma presença significativa em culturas e simbolismo ao redor do mundo.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Lobo</h2>
-                <p>Os lobos são carnívoros de porte médio a grande, conhecidos por suas habilidades de caça em grupo e comunicação vocal complexa. Vivem em matilhas hierárquicas e habitam principalmente áreas selvagens, como florestas e tundras. Sua pelagem varia em cores, incluindo cinza e marrom. São predadores altamente adaptados, caçando presas como cervos e alces. Os lobos desempenham um papel crucial na regulação dos ecossistemas em que vivem e têm um profundo significado cultural em várias sociedades.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Macaco</h2>
-                <p>Macacos são primatas altamente diversificados, variando em tamanho, cor e comportamento. Eles habitam diversas regiões, desde florestas tropicais até savanas, e exibem uma ampla gama de características sociais e alimentares. Sua capacidade de usar ferramentas e interagir em grupos complexos é notável. Macacos são conhecidos por sua agilidade e curiosidade.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Leão</h2>
-                <p>Leões são felinos majestosos, encontrados em savanas e áreas de vegetação esparsa. Os machos possuem juba, uma característica distintiva. São animais sociais, vivendo em grupos chamados de "alcateias". As fêmeas frequentemente caçam em equipe, enquanto os machos protegem o território. Os leões são predadores de topo e desempenham um papel vital no equilíbrio dos ecossistemas. Sua imagem está ligada à realeza e força.</p>
-            </section>
+    <div class="container-grid">
+        <nav class="menu" data-menu="suave">
+            <ul>
+                <li><a href="#animais">Animais</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="https://github.com/C0nanT/">GitHub</a></li>
+                <li><a data-modal="abrir" href="#">Abrir</a></li>
+                <li><img class="arvore" src="./img/arvore-decoracao.png" alt="Árvore de decoração" width="35" height="35"></li>
+            </ul>
+        </nav>
+        <section class="grid-section animais" data-anime="scroll" id="animais">
+            <h1 class="titulo">Animais Fantásticos</h1>
+            <ul class="animais-list" data-tab="menu">
+                <li>
+                    <img src="img/imagem1.jpg" alt="Foto de uma raposa">
+                </li>
+                <li>
+                    <img src="img/imagem2.jpg" alt="Foto de um esquilo">
+                </li>
+                <li>
+                    <img src="img/imagem3.jpg" alt="Foto de um urso">
+                </li>
+                <li>
+                    <img src="img/imagem4.jpg" alt="Foto de um lobo">
+                </li>
+                <li>
+                    <img src="img/imagem5.jpg" alt="Foto de um macaco">
+                </li>
+                <li>
+                    <img src="img/imagem6.jpg" alt="Foto de um leão">
+                </li>
+            </ul>
+            <div class="animais-descricao" data-tab="content">
+                <section data-anime="show-right">
+                    <h2>Raposa</h2>
+                    <p>As raposas são mamíferos carnívoros conhecidos por seus focinhos afiados, orelhas pontudas e pelagem espessa, muitas vezes em tons de vermelho ou cinza. Adaptáveis e ágeis, habitam uma variedade de ambientes, desde florestas até áreas urbanas. São caçadoras habilidosas, se alimentando principalmente de pequenos animais e ocasionalmente de frutas. Além disso, possuem uma reputação de astúcia e inteligência, frequentemente retratadas em histórias e mitos.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Esquilo</h2>
+                    <p>Esquilos são roedores de tamanho pequeno a médio, reconhecidos por suas caudas peludas e olhos expressivos. Vivem em árvores e solo, sendo ágeis escaladores. Armazenam comida, como nozes e sementes, para o inverno. Sua pelagem varia em cores, incluindo tons de marrom e cinza. São conhecidos por sua agilidade e comportamento curioso.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Urso</h2>
+                    <p>Ursos são mamíferos robustos e poderosos, com corpos maciços cobertos por pelagem densa e variada. Vivem em diversos habitats, desde florestas até regiões árticas. São onívoros, consumindo plantas e carne, e hibernam no inverno para conservar energia. São reconhecidos por sua força física e comportamento solitário, embora algumas espécies também sejam sociais. Ursos têm uma presença significativa em culturas e simbolismo ao redor do mundo.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Lobo</h2>
+                    <p>Os lobos são carnívoros de porte médio a grande, conhecidos por suas habilidades de caça em grupo e comunicação vocal complexa. Vivem em matilhas hierárquicas e habitam principalmente áreas selvagens, como florestas e tundras. Sua pelagem varia em cores, incluindo cinza e marrom. São predadores altamente adaptados, caçando presas como cervos e alces. Os lobos desempenham um papel crucial na regulação dos ecossistemas em que vivem e têm um profundo significado cultural em várias sociedades.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Macaco</h2>
+                    <p>Macacos são primatas altamente diversificados, variando em tamanho, cor e comportamento. Eles habitam diversas regiões, desde florestas tropicais até savanas, e exibem uma ampla gama de características sociais e alimentares. Sua capacidade de usar ferramentas e interagir em grupos complexos é notável. Macacos são conhecidos por sua agilidade e curiosidade.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Leão</h2>
+                    <p>Leões são felinos majestosos, encontrados em savanas e áreas de vegetação esparsa. Os machos possuem juba, uma característica distintiva. São animais sociais, vivendo em grupos chamados de "alcateias". As fêmeas frequentemente caçam em equipe, enquanto os machos protegem o território. Os leões são predadores de topo e desempenham um papel vital no equilíbrio dos ecossistemas. Sua imagem está ligada à realeza e força.</p>
+                </section>
+            </div>
+        </section>
+        <section class="grid-section faq" data-anime="scroll" id="faq">
+            <h1 class="titulo">FAQ</h1>
+            <dl class="faq-lista" data-anime="acd">
+                <dt>Onde as raposas constroem suas tocas?</dt>
+                <dd>As raposas constroem suas tocas em locais protegidos, como em buracos abandonados, tocos de árvores ou sob arbustos densos.</dd>
+                <dt>Qual é a dieta principal dos esquilos?</dt>
+                <dd>Os esquilos têm uma dieta predominantemente vegetariana, alimentando-se de nozes, sementes, frutas e ocasionalmente pequenos insetos.</dd>
+                <dt>Os ursos hibernam durante todo o inverno?</dt>
+                <dd>Sim, muitas espécies de ursos, como os ursos pardos e os ursos negros, entram em um estado de hibernação durante o inverno para conservar energia.</dd>
+                <dt>Como os lobos comunicam informações dentro da matilha?</dt>
+                <dd> Os lobos se comunicam através de vocalizações, uivos e linguagem corporal, usando sinais como postura e expressões faciais para transmitir informações sobre caça e hierarquia.</dd>
+                <dt>Qual é a diversidade de habitats em que os macacos podem ser encontrados?</dt>
+                <dd> Os lobos se comunicam através de vocalizações, uivos e linguagem corporal, usando sinais como postura e expressões faciais para transmitir informações sobre caça e hierarquia.</dd>
+                <dt>Qual é o papel dos rugidos na comunicação dos leões?</dt>
+                <dd>Os rugidos dos leões servem para marcar território, comunicar a presença, coordenar ações e manter a coesão da alcateia através de sua poderosa vocalização.</dd>
+            </dl>
+        </section>
+        <section class="grid-section contato" data-anime="scroll" id="contato">
+            <h1 class="titulo">Contato</h1>
+            <div class="mapa">
+                <img src="./img/mapa.png" alt="Localização no mapa">
+            </div>
+            <ul class="dados">
+                <li>
+                    <img src="./img/envelope.png" alt="Envelope" width="20px" height="20px">
+                    <p>conantorreswf@gmail.com</p>
+                </li>
+                <li>
+                    <img src="./img/whatsapp.svg" alt="Logo Whatsapp" width="20px" height="20px">
+                    <p>+55 (48) 99990-4772</p>
+                </li>
+                <li>
+                    <a id="github" href="https://github.com/C0nanT/">
+                        <img src="./img/github.svg" alt="Logo GitHub" width="20px" height="20px"> GitHub</a>
+                </li>
+                <li>
+                    <a id="linkedin" href="https://www.linkedin.com/in/conan-torres/">
+                        <img src="./img/linkedin.svg" alt="Logo Linkedin" width="20px" height="20px">Linkedin</a>
+                </li>
+            </ul>
+        </section>
+        <footer class="footer">
+            <p>Alguns direitos reservados a liga da justiça 🦇</p>
+        </footer>
+    </div>
+
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">x</button>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" for="senha" id="senha">
+                <button type="submit">Logar</button>
+            </form>
         </div>
     </section>
-    <section class="grid-section faq" data-anime="scroll" id="faq">
-        <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista" data-anime="acd">
-            <dt>Onde as raposas constroem suas tocas?</dt>
-            <dd>As raposas constroem suas tocas em locais protegidos, como em buracos abandonados, tocos de árvores ou sob arbustos densos.</dd>
-            <dt>Qual é a dieta principal dos esquilos?</dt>
-            <dd>Os esquilos têm uma dieta predominantemente vegetariana, alimentando-se de nozes, sementes, frutas e ocasionalmente pequenos insetos.</dd>
-            <dt>Os ursos hibernam durante todo o inverno?</dt>
-            <dd>Sim, muitas espécies de ursos, como os ursos pardos e os ursos negros, entram em um estado de hibernação durante o inverno para conservar energia.</dd>
-            <dt>Como os lobos comunicam informações dentro da matilha?</dt>
-            <dd> Os lobos se comunicam através de vocalizações, uivos e linguagem corporal, usando sinais como postura e expressões faciais para transmitir informações sobre caça e hierarquia.</dd>
-            <dt>Qual é a diversidade de habitats em que os macacos podem ser encontrados?</dt>
-            <dd> Os lobos se comunicam através de vocalizações, uivos e linguagem corporal, usando sinais como postura e expressões faciais para transmitir informações sobre caça e hierarquia.</dd>
-            <dt>Qual é o papel dos rugidos na comunicação dos leões?</dt>
-            <dd>Os rugidos dos leões servem para marcar território, comunicar a presença, coordenar ações e manter a coesão da alcateia através de sua poderosa vocalização.</dd>
-        </dl>
-    </section>
-    <section class="grid-section contato" data-anime="scroll" id="contato">
-        <h1 class="titulo">Contato</h1>
-        <div class="mapa">
-            <img src="./img/mapa.png" alt="Localização no mapa">
-        </div>
-        <ul class="dados">
-            <li>
-                <img src="./img/envelope.png" alt="Envelope" width="20px" height="20px">
-                <p>conantorreswf@gmail.com</p>
-            </li>
-            <li>
-                <img src="./img/whatsapp.svg" alt="Logo Whatsapp" width="20px" height="20px">
-                <p>+55 (48) 99990-4772</p>
-            </li>
-            <li>
-                <a id="github" href="https://github.com/C0nanT/">
-                    <img src="./img/github.svg" alt="Logo GitHub" width="20px" height="20px"> GitHub</a>
-            </li>
-            <li>
-                <a id="linkedin" href="https://www.linkedin.com/in/conan-torres/">
-                    <img src="./img/linkedin.svg" alt="Logo Linkedin" width="20px" height="20px">Linkedin</a>
-            </li>
-        </ul>
-    </section>
-
-    <footer class="footer">
-        <p>Alguns direitos reservados a liga da justiça 🦇</p>
-    </footer>
-
     <script type="module" src="./js/script.js"></script>
 </body>
 
