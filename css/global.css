@@ -42,7 +42,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  position: relative;
+  /* position: relative; */
 }
 
 .arvore {
